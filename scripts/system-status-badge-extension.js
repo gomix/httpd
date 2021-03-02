@@ -5,8 +5,9 @@ angular
   .run([
     'extensionRegistry',
     function(extensionRegistry) {
-      // Replace http://status.example.com/ with your domain
-      var system_status_elem = $('<a href="http://status.example.com/"' +
+
+      //http://paas.stage.psi.redhat.com
+      var system_status_elem = $('<a href="http://paas.stage.psi.redhat.com/"' +
       'target="_blank" class="nav-item-iconic system-status"><span title="' +
       'System Status" class="fa status-icon pficon-warning-triangle-o">' +
       '</span></a>');
