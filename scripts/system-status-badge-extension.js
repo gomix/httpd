@@ -10,7 +10,7 @@ angular
       var system_status_elem = $('<a href="http://paas.stage.psi.redhat.com/"' +
       'target="_blank" class="nav-item-iconic system-status"><span title="' +
       'System Status" class="fa status-icon pficon-warning-triangle-o">' +
-      '</span></a>');
+      '</span>System Status</a>');
 
       // Add the extension point to the registry so the badge appears
       // To disable the badge, comment this block out
