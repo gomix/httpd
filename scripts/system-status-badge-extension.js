@@ -10,7 +10,7 @@ angular
       var system_status_elem = $('<a href="https://paas.stage.psi.redhat.com/"' +
       'target="_blank" class="nav-item-iconic system-status"><span title="' +
       'System Status" class="fa status-icon pficon-warning-triangle-o">' +
-      '</span>System Status</a>');
+      'Warning: This cluster will be decomissioned on May 14th.</span></a>');
 
       // Add the extension point to the registry so the badge appears
       // To disable the badge, comment this block out
