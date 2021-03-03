@@ -6,10 +6,10 @@ angular
     'extensionRegistry',
     function(extensionRegistry) {
 
-      var system_status_elem = $('<a href="https://httpd-example-system-status-badge.cloud.paas.stage.psi.redhat.com/"' +
+      var system_status_elem = $('<a href="https://badge.cloud.paas.psi.redhat.com/"' +
       'target="_blank" class="nav-item-iconic system-status"><span title="' +
       'System Status" class="fa status-icon pficon-warning-triangle-o">' +
-      '</span>Warning: This cluster will be decomissioned on May 14th.</a>');
+      'Warning:</span>This cluster will be decomissioned on May 14th.</a>');
 
       // Add the extension point to the registry so the badge appears
       // To disable the badge, comment this block out
