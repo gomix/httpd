@@ -2,11 +2,11 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "system-status-badge-static-content",
+    "name": "ssbadge",
     "annotations": {
       "openshift.io/display-name": "Apache HTTP Server",
-      "description": "An example Apache HTTP Server (httpd) application that serves static content. For more information about using this template, including OpenShift considerations, see https://github.com/sclorg/httpd-ex/blob/master/README.md.",
-      "tags": "quickstart,httpd",
+      "description": "Apache HTTP Server (httpd) application that serves static content for system-status-badge extension.",
+      "tags": "httpd",
       "iconClass": "icon-apache",
       "openshift.io/long-description": "This template defines resources needed to develop a static application served by Apache HTTP Server (httpd), including a build configuration and application deployment configuration.",
       "openshift.io/provider-display-name": "Red Hat, Inc.",
@@ -17,8 +17,8 @@
   },
   "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/sclorg/httpd-ex/blob/master/README.md.",
   "labels": {
-      "template": "httpd-example",
-      "app": "httpd-example"
+      "template": "ssbadge",
+      "app": "ssbadge"
   },
   "objects": [
     {
@@ -170,7 +170,7 @@
           "spec": {
             "containers": [
               {
-                "name": "httpd-example",
+                "name": "httpd-ssbadge",
                 "image": " ",
                 "ports": [
                   {
@@ -213,7 +213,7 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "httpd-example"
+      "value": "ssbadge"
     },
     {
       "name": "NAMESPACE",
@@ -234,7 +234,7 @@
       "displayName": "Git Repository URL",
       "description": "The URL of the repository with your application source code.",
       "required": true,
-      "value": "https://github.com/sclorg/httpd-ex.git"
+      "value": "https://github.com/gomix/httpd"
     },
     {
       "name": "SOURCE_REPOSITORY_REF",
